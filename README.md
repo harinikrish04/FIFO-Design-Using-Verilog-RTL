@@ -30,14 +30,4 @@ Clean and modular RTL design
 Compatible with FPGA synthesis tools (Vivado, Quartus, etc.)
 Simulation-ready and easy to integrate
 
-# Block diagram
-                +----------------------+
-DATA_IN ----->  |       FIFO RAM       | -----> DATA_OUT
-                |  (DEPTH x WIDTH)     |
-                +----------------------+
-                     ^         |
-                     |         v
-               Write Pointer   Read Pointer
-                     ^         |
-                     |         v
-                  FULL        EMPTY
+
