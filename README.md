@@ -7,27 +7,27 @@ FIFOs play a major role in managing communication between hardware modules that 
 
 This FIFO design is built entirely using Verilog RTL, following a clean and synthesizable architecture suitable for FPGA and ASIC implementation. It includes the following key components:
 
-Memory Array: Stores data elements based on FIFO depth and width.
+1.Memory Array: Stores data elements based on FIFO depth and width.
 
-Write Pointer: Tracks the address where new data should be written and automatically increments after each valid write.
+2.Write Pointer: Tracks the address where new data should be written and automatically increments after each valid write.
 
-Read Pointer: Tracks the address from which data must be read and increments after each valid read.
+3.Read Pointer: Tracks the address from which data must be read and increments after each valid read.
 
-Full Logic: Indicates when the FIFO cannot accept more data, preventing overflow.
+4.Full Logic: Indicates when the FIFO cannot accept more data, preventing overflow.
 
-Empty Logic: Indicates when there is no data available for reading, preventing underflow.
+5.Empty Logic: Indicates when there is no data available for reading, preventing underflow.
 
-Overflow/Underflow Protection: Ensures safe operation by blocking invalid read or write operations.
+6.Overflow/Underflow Protection: Ensures safe operation by blocking invalid read or write operations.
 
 Because the design is fully synchronous and relies on efficient pointer logic, it maintains consistent performance and can be easily integrated into larger digital systems such as communication modules, processors, DSP pipelines, and embedded interfaces. The entire implementation is synthesizable and optimized for FPGA deployment, ensuring a reliable and efficient solution for real-time data buffering applications.
 # Features
-Parameterized data width and depth
-Synchronous read and write operations
-Full and Empty status flag generation
-Overflow and underflow protection
-Pointer rollover logic implemented
-Clean and modular RTL design
-Compatible with FPGA synthesis tools (Vivado, Quartus, etc.)
-Simulation-ready and easy to integrate
+Parameterized data width and depth,
+Synchronous read and write operations,
+Full and Empty status flag generation,
+Overflow and underflow protection,
+Pointer rollover logic implemented,
+Clean and modular RTL design,
+Compatible with FPGA synthesis tools (Vivado, Quartus, etc.),
+Simulation-ready and easy to integrate.
 
 
